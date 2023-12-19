@@ -1,5 +1,6 @@
 const fs       = require('fs')
 const inquirer = require('inquirer')
+const bulma = require('bulma')
 
 const htmlFrame = `
 <!DOCTYPE html>
@@ -9,37 +10,34 @@ const htmlFrame = `
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${name}'s Portfolio</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
     <header>
-    <h1>${name}</h1>
-    <ul>
-        <li><a href="#About-Me"> About Me</a></li>
-        <li>${location}</li>
-        <li><a href="${githubURL}"> GitHub</a></li>
-        <li><a href="${linkedinURL}"> LinkdedIn</a></li>
-    </ul>
-    </header>
-    <div>
-     <div class="flex">
-      <img id="portrait" src="" alt="TBD">
-      <div>
-        <h2 id="About-Me" style="width: 400px;">About Me</h2>
-        <div class="bio-text">
-          <p>${bio}</p>
+    <h1 style="font-size: 50px; text-align: center;">${name}</h1>
+    <h4 style="font-size: 30px; text-align: center; margin-bottom: 20%;">${location} </h4>
+    <div class="card">
+        <div class="card-content" style="height: 400px;">
+          <p class="title">
+            ${bio}
+          </p>
+          <p class="subtitle">
+            ${name}
+          </p>
         </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              View <a href="${githubURL}">LinkedIn</a>
+            </span>
+          </p>
+          <p class="card-footer-item">
+            <span>
+              Checkout  <a href="${linkedinURL}">GitHub</a>
+            </span>
+          </p>
+        </footer>
       </div>
-    </div>
-    <footer>
-      <div class="footer-block">
-        <h3 id="Contact-Me">Contact Me</h3>
-        <ul class="contact-me">
-          <li><a href="${githubURL}"> Github</a></li>
-          <li><a href="${linkedinURL}"> LinkedIn</a></li>
-        </ul>
-      </div>
-    </footer>
 </body>
 </html>
 `

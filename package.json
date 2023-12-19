@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bulma": "^0.9.4",
     "fs": "^0.0.1-security",
     "inquirer": "^9.2.12"
   }

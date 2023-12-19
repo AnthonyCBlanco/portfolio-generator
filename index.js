@@ -11,7 +11,6 @@ const htmlFrame = `
   <title>${name}'s Portfolio</title>
   <link rel="stylesheet" href="">
 </head>
-
 <body>
     <header>
     <h1>${name}</h1>
@@ -42,7 +41,5 @@ const htmlFrame = `
       </div>
     </footer>
 </body>
-
-
 </html>
 `

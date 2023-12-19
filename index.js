@@ -31,15 +31,6 @@ const htmlFrame = `
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-block">
-        <h3 id="Contact-Me">Contact Me</h3>
-        <ul class="contact-me">
-          <li><a href="${githubURL}"> Github</a></li>
-          <li><a href="${linkedinURL}"> LinkedIn</a></li>
-        </ul>
-      </div>
-    </footer>
 </body>
 </html>
 `

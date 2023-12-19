@@ -4,82 +4,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zach's Portfolio</title>
+  <title>${name}'s Portfolio</title>
   <link rel="stylesheet" href="">
 </head>
-
-<header style>
-  <h1>User's Name</h1>
-  <ul>
-    <li><a href="#About-Me"> About Me</a></li>
-    <li><a href="#Work"> Work</a></li>
-    <li><a href="#Contact-Me"> Contact Me</a></li>
-    <li><a href=""> Resume</a></li>
-  </ul>
-</header>
-
 <body>
-
-
-
-  <div>
-    <div class="flex">
+    <header>
+    <h1>${name}</h1>
+    <ul>
+        <li><a href="#About-Me"> About Me</a></li>
+        <li>${location}</li>
+        <li><a href="${githubURL}"> GitHub</a></li>
+        <li><a href="${linkedinURL}"> LinkdedIn</a></li>
+    </ul>
+    </header>
+    <div>
+     <div class="flex">
       <img id="portrait" src="" alt="TBD">
       <div>
         <h2 id="About-Me" style="width: 400px;">About Me</h2>
         <div class="bio-text">
-          <p>Bio</p>
+          <p>${bio}</p>
         </div>
       </div>
     </div>
-
-    <div class="flex work-sect">
-      <h2 id="Work" class="work-sidebar">Work</h2>
-      <div class="work-flexbox">
-        <div class="container">
-          <a href=""> <img src="" class="card myButton"></a>
-          <div class="card-placeholder card-descr">
-            <span class="project-descr">Placeholder Project:</span> <span class="project-text">Content TBD</span>
-          </div>
-        </div>
-        <div class="container">
-          <a href=""> <img src="" class="myButton card"> </a>
-          <div class="card-placeholder card-descr"><span class="project-descr">Placeholder Project:</span> <span
-              class="project-text">Content TBD</span></div>
-        </div>
-        <div class="container">
-          <a href=""> <img src="" class="card myButton"> </a>
-          <div class="card-placeholder card-descr"><span class="project-descr">Placeholder Project:</span> <span
-              class="project-text">Content TBD</span></div>
-        </div>
-        <div class="container">
-          <a href=""> <img src="" class="card myButton"></a>
-          <div class="card-placeholder card-descr"> <span class="project-descr">Placeholder Project:</span> <span
-              class="project-text">Content TBD</span></div>
-        </div>
-        <div id="top-container">
-          <a href=""><img src=""
-              id="top-card" class="myButton"></a>
-          <div class="card-top top-descr"><span class="project-descr">Placeholder Project:</span> <span
-              class="project-text">TBD</span></div>
-        </div>
+    <footer>
+      <div class="footer-block">
+        <h3 id="Contact-Me">Contact Me</h3>
+        <ul class="contact-me">
+          <li><a href="${githubURL}"> Github</a></li>
+          <li><a href="${linkedinURL}"> LinkedIn</a></li>
+        </ul>
       </div>
-    </div>
+    </footer>
 </body>
-
-<footer>
-  <div class="footer-block">
-    <h3 id="Contact-Me">Contact Me</h3>
-    <ul class="contact-me">
-      <li><a href=""> Phone</a></li>
-      <li><a href=""> Email</a></li>
-      <li><a href=""> Github</a></li>
-      <li><a href=""> LinkedIn</a></li>
-    </ul>
-  </div>
-</footer>
-
-
-
-
 </html>
